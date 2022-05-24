@@ -13,7 +13,7 @@ import { ListHeroesComponent } from './listHeroes/listHeroes.component';
         ListHeroesComponent
     ],
     imports:[
-        CommonModule
+        CommonModule //Necessario importar para poder trabajar con ngFor & ngIf-else
     ]
 })
 export class HeroesModule {}
