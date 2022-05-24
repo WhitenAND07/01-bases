@@ -4,4 +4,7 @@ import { Component} from '@angular/core';
   selector: 'app-main-page',
   templateUrl: './main-page.component.html'
 })
-export class MainPageComponent {}
+export class MainPageComponent {
+  
+  agregar(): void {}
+}
