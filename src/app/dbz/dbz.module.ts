@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { MainPageComponent } from './main-page/main-page.component';
 import { PersonajesComponent } from './personajes/personajes.component';
+import { AgregarPersonajeComponent } from './agregar-personaje/agregar-personaje.component';
 
 
 
@@ -11,7 +12,8 @@ import { PersonajesComponent } from './personajes/personajes.component';
 @NgModule({
   declarations: [
     MainPageComponent,
-    PersonajesComponent
+    PersonajesComponent,
+    AgregarPersonajeComponent
   ],
   exports:[
     MainPageComponent
