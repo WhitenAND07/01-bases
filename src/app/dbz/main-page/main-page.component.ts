@@ -6,11 +6,6 @@ import { Personaje } from '../interfaces/dbz.interface';
   templateUrl: './main-page.component.html'
 })
 export class MainPageComponent {
-  
-  public personajeNuevo: Personaje = {
-    nombre:'',
-    poder: 0 
-  };
 
   public personajes: Personaje[] = [
     {
@@ -26,4 +21,19 @@ export class MainPageComponent {
       poder: 7500
     }
   ];
+
+  public personajeNuevo: Personaje = {
+    nombre:'',
+    poder: 0 
+  };
+
+  agregarNuevoPersonaje(personajeInput: Personaje){
+    
+    this.personajes.push(personajeInput);
+    
+    this.personajeNuevo = {
+      nombre: '',
+      poder: 0
+    };
+  }
 }
