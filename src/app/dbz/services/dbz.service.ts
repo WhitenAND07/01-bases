@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { Personaje } from "../interfaces/dbz.interface";
+import { Personaje } from '../interfaces/dbz.interface';
 
 @Injectable()
 export class DbzService{
@@ -17,12 +17,16 @@ export class DbzService{
           nombre: 'Vegeta',
           poder: 7500
         }
-      ];
+    ];
 
-      get personajes(): Personaje[]{
+    get personajes(): Personaje[]{
         //Para evitar enviar el atributo privado por referencia utilizamos el operador spread
         return [...this._personajes];
     }
-
+    
     constructor(){}
+
+    agregarNuevoPersonaje(personajeNuevo: Personaje): void{
+        this._personajes.push(personajeNuevo);
+    }
 }
